@@ -59,25 +59,26 @@ html, body {
     font-size: 20px;
     overflow: hidden;
     font-family: 'EB Garamond', serif;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: opacity 0.5s;
+    cursor: pointer;
+    user-select: none;
 }
 
-.title a, .title p {
+.title p {
     color: white;
     font-size: 20px;
     font-family: 'Cinzel', serif;
     text-transform: capitalize;
     text-decoration: none;
     transition: opacity 0.5s;
+    cursor: pointer;
+    user-select: none;
 }
 
-li > a {
-    color: white;
-    text-transform: capitalize;
-    text-decoration: none;
-    transition: opacity 0.5s;
-}
-
-li > a:hover, .title a:hover {
+li:hover, .title p:hover {
     opacity: 50%;
 }
 
@@ -106,19 +107,16 @@ li > a:hover, .title a:hover {
     font-size: 600%;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
-    transform: translateZ(0);
+    transform: scale(1);
     transition-duration: 1s;
     transition-property: transform, font-size;
-}
-
-#front a {
-    color: white;
-    text-transform: capitalize;
-    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    letter-spacing: normal;
 }
 
 #front h1:hover {
-    transform: scale(1.5);
+    transform: scale(2);
 }
 
 
@@ -197,7 +195,7 @@ li > a:hover, .title a:hover {
     height: 100vh;
     width: 100vw;
     opacity: 0;
-    transition: 1s;
+    transition: 1500ms;
 }
 
 .slideshow img.active {
@@ -207,11 +205,10 @@ li > a:hover, .title a:hover {
 /* Prev/Next Button Styling */
 
 .prev, .next {
+    transform: scale(3);
     position: absolute;
-    font-weight: bold;
     user-select: none;
     cursor: pointer;
-    font-size: 50;
     transition: all 0.5s ease;
     padding: 0 1% 0 1%;
     justify-self: center;
@@ -227,5 +224,5 @@ li > a:hover, .title a:hover {
 
 .prev:hover, .next:hover {
     text-shadow: rgba(0, 0, 0 , 1) 1px 0 20px;
-    transform: scale(1.3);
+    transform: scale(3.9);
 }
