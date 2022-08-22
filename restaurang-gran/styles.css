@@ -39,7 +39,7 @@ html, body {
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(3px);
     padding: 1em;
-    height: 30px;
+    height: 2em;
     position: fixed;
     width: 100%;
     box-sizing: content-box;
@@ -56,7 +56,7 @@ html, body {
 
 .menu-nav > li {
     margin: 1rem 2rem 1rem 1rem;
-    font-size: 20px;
+    font-size: 1.5rem;
     overflow: hidden;
     font-family: 'EB Garamond', serif;
     color: white;
@@ -69,7 +69,7 @@ html, body {
 
 .title p {
     color: white;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-family: 'Cinzel', serif;
     text-transform: capitalize;
     text-decoration: none;
@@ -129,7 +129,7 @@ li:hover, .title p:hover {
 }
 
 #concept p {
-    margin: 150px 100px;
+    margin: 10rem;
     font-size: 1.4rem;
     max-height: 100%;
 }
@@ -147,7 +147,8 @@ li:hover, .title p:hover {
 }
 
 .menu-box {
-    border: 2px solid white;
+    border: 0.2em solid white;
+    border-radius: 3em 0 3em 0;
     height: 70%;
     flex: auto;
     display: flex;
@@ -158,7 +159,7 @@ li:hover, .title p:hover {
 
 .menu-box li{
     list-style-type: none;
-    padding: 10px;
+    padding: 1.5em;
 }
 
 .course::after {
@@ -210,7 +211,7 @@ li:hover, .title p:hover {
     user-select: none;
     cursor: pointer;
     transition: all 0.5s ease;
-    padding: 0 1% 0 1%;
+    padding: 2rem;
     justify-self: center;
 }
 
@@ -223,6 +224,6 @@ li:hover, .title p:hover {
 }
 
 .prev:hover, .next:hover {
-    text-shadow: rgba(0, 0, 0 , 1) 1px 0 20px;
+    text-shadow: rgba(0, 0, 0 , 1) 1px 0 2rem;
     transform: scale(3.9);
 }
